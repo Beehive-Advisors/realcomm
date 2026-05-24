@@ -43,7 +43,7 @@ except ImportError:
 # it back with retries and a read-back verification. Loading the existing
 # workbook (rather than rebuilding it) preserves all styling — fills, fonts,
 # column widths, frozen panes — automatically.
-IO_ATTEMPTS = 12
+IO_ATTEMPTS = 3
 IO_DELAY = 4  # seconds between attempts
 
 
@@ -92,30 +92,26 @@ ENUMS = {
     "property_type": {"OFF", "MED", "IND", "RET", "COW", "LAB", "DC", "GND"},
     "size_unit": {"RSF", "ACRE"},
     "lease_type": {"NNN", "GRS"},
-    "base_rent_frequency": {"ANNUAL", "MONTHLY"},
     "security_deposit_type": {"Cash", "CL", "NONE"},
     "renewal_rent_basis": {"FMR", "FIX", "CPI", "NONE"},
 }
 
 # Columns expected in each sheet (header row 1), used to map field -> column.
+# These are the normalized form of the flat `Completed - Schema.xlsx` fields --
+# the single source of truth. Do not add fields the schema does not define.
 SHEET_COLS = {
-    "Tenants": ["tenant_id", "tenant_name", "tenant_entity_type",
-                "tenant_contact_name", "tenant_contact_email",
-                "tenant_contact_phone", "notes"],
-    "Landlords": ["landlord_id", "landlord_name", "landlord_entity_type",
-                  "landlord_contact_name", "landlord_contact_email",
-                  "landlord_contact_phone", "notes"],
+    "Tenants": ["tenant_id", "tenant_name"],
+    "Landlords": ["landlord_id", "landlord_name"],
     "Properties": ["property_id", "premises_address", "property_type",
-                   "size", "size_unit", "notes"],
+                   "size", "size_unit"],
     "Leases": ["lease_id", "tenant_id", "landlord_id", "property_id",
                "commencement_date", "expiration_date", "term_months",
-               "lease_type", "base_rent", "base_rent_frequency",
-               "escalation_pct", "security_deposit_amount",
-               "security_deposit_type", "permitted_use", "notes"],
+               "lease_type", "base_rent", "escalation_pct",
+               "security_deposit_amount", "security_deposit_type",
+               "permitted_use"],
     "RenewalOptions": ["option_id", "lease_id", "option_sequence",
                        "renewal_term_months", "renewal_rent_basis",
-                       "renewal_rent_value", "notice_min_months",
-                       "notice_max_months", "notes"],
+                       "notice_min_months", "notice_max_months"],
 }
 
 
@@ -242,7 +238,6 @@ def main():
     check_enum("property_type", p.get("property_type"))
     check_enum("size_unit", p.get("size_unit"))
     check_enum("lease_type", ls.get("lease_type"))
-    check_enum("base_rent_frequency", ls.get("base_rent_frequency"))
     check_enum("security_deposit_type", ls.get("security_deposit_type"))
     check_date("commencement_date", ls.get("commencement_date"))
     check_date("expiration_date", ls.get("expiration_date"))
