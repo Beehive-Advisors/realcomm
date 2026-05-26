@@ -1,2 +1,5 @@
 *:Zone.Identifier
 .DS_Store
+
+# Instructor-only materials (answer keys, source docs) — any folder named "instructor"
+instructor/
