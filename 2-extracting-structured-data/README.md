@@ -31,10 +31,10 @@ No sense in explaining more - let's make one together. Ask Claude to use your co
 
 ## Exercise 2.5: Save the agent skill to Claude Cowork
 Once you've reviewed the agent skill, click "Save Skill:"
-![Save skill button on the Claude interface](../README-images/save-skill.png)
+![Save skill button on the Claude interface](../readme-images/save-skill.png)
 
-This allows you evoke the agent skill using slash (`/`) notation within the Claude interface. 
+This allows you to evoke the agent skill using slash (`/`) notation within the Claude interface. 
 
-To view your saved skill, go to Customize > Skills > Personal Skills > `YOUR-SKILL-Name`
+To view your saved skill, go to Customize > Skills > Personal Skills > `YOUR-SKILL-NAME`
 
-We'll use `/` noation in our next exercise (`3-automation-with-agent-skills`). 
+We'll use `/` notation in our next exercise (`3-automation-with-agent-skills`). 
