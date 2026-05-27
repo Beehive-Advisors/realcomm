@@ -4,7 +4,7 @@ In this exercise, you will learn how to search across a corpus of documents usin
 We can't work with data we don't have a feel for. Open a few of the leases and familiarize yourself with the contents; notice the visuals on the appendices. 
 
 ## Exercise 1.2: instantly create a lease database by navigating to the directory in Cowork
-To select what file you'd like Cowork to use during this exercise, select "work in a project" and choose the correct directory, which is named `1-image-searching`. The button should look like this:
+To select what file you'd like Cowork to use during this exercise, select "work in a project" and choose the correct directory, which is named `1-create-lease-database`. The button should look like this:
 ![Attach folder button](../readme-images/attach-folder.png)
 
 
