@@ -1,8 +1,0 @@
-{"source_file":"Ironhide_Cold_Logistics_Industrial_Lease.pdf",
- "tenant":{"tenant_name":"Ironhide Cold Logistics, LLC"},
- "landlord":{"landlord_name":"Beehive Realty Trust, LLC"},
- "property":{"premises_address":"4280 West Indiana Avenue, West Valley City, UT 84120","property_type":"IND","size":88500,"size_unit":"RSF"},
- "lease":{"commencement_date":"2026-12-01","expiration_date":"2036-11-30","term_months":120,"lease_type":"NNN","base_rent":1283250.00,"escalation_pct":2.5,"security_deposit_amount":641625.00,"security_deposit_type":"CL","permitted_use":"Refrigerated/frozen warehousing, cross-docking, blast-freezing, ambient warehousing, repack, customer-pick logistics, and ancillary office, in support of 3PL operations."},
- "renewal_options":[
-  {"option_sequence":1,"renewal_term_months":60,"renewal_rent_basis":"FMR","notice_min_months":15,"notice_max_months":18},
-  {"option_sequence":2,"renewal_term_months":60,"renewal_rent_basis":"FMR","notice_min_months":15,"notice_max_months":18}]}
