@@ -1,5 +1,6 @@
 # What's Possible with AI: A Live Demo of Claude in CRE
-To download this repo, either clone it from your command line or use the 
+To download this repo, either clone it from your command line or use the "Download ZIP" button on Github:
+![Attach folder button](README-images/download-repo.png)
 
 This repository contains all of the files needed for our session today. The repo is broken into a folder for each step of the exercise with Claude:
 1) Image search

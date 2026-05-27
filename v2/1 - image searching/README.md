@@ -5,17 +5,17 @@ We can't work with data we don't have a feel for. Open a few of the leases and f
 
 ## Exercise 1.2: instantly create a lease database by navigating to the directory in Cowork
 To select what file you'd like cowork to use during this exercise, select "work in a project" and choose the correct directory, which is named "1 - image searching". The button should look like this:
-![Attach folder button](../../README-images/attach-folder.png)
+![Attach folder button](../README-images/attach-folder.png)
 
 
 ## Exercise 1.3: query the textual content of the leases
-Let's start with a simple query against our lease database. You're welcome to 
+Let's start with a simple query against our lease database. You're welcome to ask any question you want about the textual information of the leases. 
 
 
 ## Exercise 1.4: query the visual content of the leases
 Vellichor Theraputics has an appendix section with a floorplan that looks like this: 
 
-![Attach folder button](../../README-images/sample-floorplan.png)
+![Attach folder button](../README-images/sample-floorplan.png)
 
 This information is hard for the LLM to interpret textually. Ask a question about this visual, and make sure to tell Claude to use "visual search." This will ensure that the PDF page is converted to an image, which will allow the LLM to understand the visual information
 
