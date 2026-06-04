@@ -20,7 +20,7 @@ A **schema** is the formal definition of the data you want to extract. Open [`sc
 2. **Description** — what it is and where to find it in the lease.
 3. **Type** — the output format (string, number, date, enum).
 
-This schema adds a fourth column the old one didn't have: **Allowed Values / Match Rule** — what actually *counts* as a correct answer. The first six rows are done as examples. Fill in the amber cells for the rest. If you can't state the match rule, you don't yet know what "correct" means — and neither will Claude.
+Let's fill this out together. 
 
 ## Exercise 4.2: Abstract the Ironhide lease
 
@@ -32,10 +32,7 @@ Look it over. Does anything seem off? Hold that thought — Exercise 5 is where 
 
 ## Exercise 4.3: Write the result to an Excel spreadsheet
 
-Now have Claude save the abstraction into [`golden-one-lease.xlsx`](./golden-one-lease.xlsx) — this is the **golden dataset** you'll grade against in Exercise 5.
-
-> Write the abstracted fields to `golden-one-lease.xlsx`, one row per field, with a column for the value and a column for where you found it in the lease.
-
+Now have Claude save the abstraction into an excel file.
 
 ## Exercise 4.4: Turn this into a skill
 
