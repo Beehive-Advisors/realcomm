@@ -1,13 +1,12 @@
 # Exercise 4: Extracting Structured Data
 
-In Exercise 3 you queried leases. Now you'll pull **structured data** out of one — the core of almost every real estate workflow. By the end you'll have two things: a **golden record** (a verified answer key for one lease) and a reusable **abstraction skill**. In Exercise 5 you'll use both to *measure* how good the extraction actually is.
+In Exercise 3 you queried leases. Now you'll pull **structured data** out of one — the core of almost every real estate workflow. By the end you'll have two things: a **abstracte lease** and a reusable **abstraction skill**. In Exercise 5 you'll use both to *measure* how good the extraction actually is.
 
 > **Point Cowork at this folder** (`4-extracting-structured-data`), not the repo root.
 
 Files in this directory:
 - `schema.docx` — the data definition. The first rows are filled in; you'll complete the rest.
 - `Ironhide_Cold_Logistics_Industrial_Lease.pdf` — the one lease you'll work with.
-- `golden-one-lease.xlsx` — where Claude will write the answer key for this lease.
 - `instructor/` — ignore this; it's the answer key.
 
 ---
@@ -56,5 +55,4 @@ You'll run this skill across a batch of leases in Exercise 5 — and find out ho
 
 ### What you learned
 - A schema defines not just the data, but what counts as a **correct** answer.
-- A **golden record** is verified truth, and reviewing it is where you discover the ambiguities.
 - An **agent skill** turns a one-off prompt into a repeatable tool.
